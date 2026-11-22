@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | ExamPath</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">Exam<span>Path</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="exam-details.html">Exams</a>
+    <a href="planner.html">Planner</a>
+    <a href="mock-test.html">Mock Tests</a>
+    <a href="eligibility.html">Eligibility</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<main class="page-wrap">
+  <p class="eyebrow">YOUR OVERVIEW</p>
+  <h1>Preparation Dashboard</h1>
+  <p class="muted">Track your study tasks and mock test performance.</p>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <strong id="dashTotal">0</strong>
+      <span>Total study tasks</span>
+    </div>
+    <div class="stat-card">
+      <strong id="dashDone">0</strong>
+      <span>Tasks completed</span>
+    </div>
+    <div class="stat-card">
+      <strong id="dashTests">0</strong>
+      <span>Mock tests taken</span>
+    </div>
+    <div class="stat-card">
+      <strong id="dashBest">—</strong>
+      <span>Best mock score</span>
+    </div>
+  </div>
+
+  <div class="section-grid">
+    <section class="form-card">
+      <h2>Study Progress</h2>
+      <div class="progress-track">
+        <div id="dashProgressBar" class="progress-fill"></div>
+      </div>
+      <p id="dashProgressText" class="muted">No tasks added yet.</p>
+      <a class="btn primary" href="planner.html">Open Study Planner</a>
+    </section>
+
+    <section class="form-card">
+      <h2>Mock Test History</h2>
+      <div id="dashHistory">No mock tests completed yet.</div>
+      <a class="btn outline" href="mock-test.html">Take a Mock Test</a>
+    </section>
+  </div>
+</main>
+
+<footer>ExamPath · Your preparation overview</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Exams | ExamPath</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">Exam<span>Path</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="exam-details.html">Exams</a>
+    <a href="planner.html">Planner</a>
+    <a href="mock-test.html">Mock Tests</a>
+    <a href="eligibility.html">Eligibility</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<main class="page-wrap">
+  <p class="eyebrow">EXAM DIRECTORY</p>
+  <h1>Explore Exam Categories</h1>
+  <p class="muted">
+    Search and filter the sample exam categories below.
+  </p>
+
+  <div class="toolbar">
+    <input id="examFilter" type="search" placeholder="Filter exam groups...">
+
+    <select id="examSort">
+      <option value="default">Default order</option>
+      <option value="az">Name A–Z</option>
+    </select>
+  </div>
+
+  <div id="examList" class="exam-grid"></div>
+
+  <div class="notice section">
+    Always check the official recruitment notification for actual
+    eligibility and application details.
+  </div>
+</main>
+
+<footer>ExamPath · Sample exam information</footer>
+<script src="script.js"></script>
+</body>
+</html>

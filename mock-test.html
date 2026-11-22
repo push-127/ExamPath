@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock Test | ExamPath</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">Exam<span>Path</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="exam-details.html">Exams</a>
+    <a href="planner.html">Planner</a>
+    <a href="mock-test.html">Mock Tests</a>
+    <a href="eligibility.html">Eligibility</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<main class="page-wrap narrow">
+  <p class="eyebrow">PRACTISE AND IMPROVE</p>
+  <h1>General Aptitude Mock Test</h1>
+  <p class="muted">5 sample questions. No negative marking.</p>
+
+  <section id="quizArea" class="quiz-card">
+    <div class="quiz-top">
+      <span id="questionCounter">Question 1 of 5</span>
+      <span id="answeredCounter">0 answered</span>
+    </div>
+    <div class="progress-track">
+      <div id="quizProgress" class="progress-fill"></div>
+    </div>
+    <h2 id="questionText"></h2>
+    <div id="options" class="options"></div>
+    <div class="quiz-actions">
+      <button id="prevQuestion" class="btn outline">Previous</button>
+      <button id="nextQuestion" class="btn primary">Next</button>
+      <button id="submitTest" class="btn primary">Submit Test</button>
+    </div>
+  </section>
+
+  <section id="resultArea" class="result-card hidden">
+    <p class="eyebrow">YOUR RESULT</p>
+    <h2 id="scoreText"></h2>
+    <p id="resultSummary"></p>
+    <div id="reviewList"></div>
+    <button id="retakeTest" class="btn primary">Retake Test</button>
+  </section>
+</main>
+
+<footer>ExamPath · Sample practice questions</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eligibility Checker | ExamPath</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">Exam<span>Path</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="exam-details.html">Exams</a>
+    <a href="planner.html">Planner</a>
+    <a href="mock-test.html">Mock Tests</a>
+    <a href="eligibility.html">Eligibility</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<main class="page-wrap narrow">
+  <p class="eyebrow">QUICK SELF-CHECK</p>
+  <h1>Eligibility Checker</h1>
+  <p class="muted">
+    Enter your age and qualification to compare them with sample criteria.
+  </p>
+
+  <form id="eligibilityForm" class="form-card">
+    <label>
+      Your age
+      <input id="candidateAge" type="number" min="16" max="100"
+             required placeholder="Enter your age">
+    </label>
+
+    <label>
+      Highest qualification
+      <select id="candidateQualification">
+        <option value="10">10th / SSLC</option>
+        <option value="12">12th / PUC</option>
+        <option value="degree">Degree</option>
+        <option value="pg">Postgraduate</option>
+      </select>
+    </label>
+
+    <label>
+      Exam category
+      <select id="candidateGroup">
+        <option value="all">All categories</option>
+        <option value="banking">Banking</option>
+        <option value="ssc">SSC</option>
+        <option value="railway">Railway</option>
+        <option value="defence">Defence</option>
+      </select>
+    </label>
+
+    <button class="btn primary" type="submit">
+      Check Sample Eligibility
+    </button>
+  </form>
+
+  <div id="eligibilityResults" class="section"></div>
+
+  <div class="notice">
+    These are simplified sample rules for website practice. Actual eligibility
+    depends on the official notification, cut-off date, category relaxations,
+    nationality and other conditions.
+  </div>
+</main>
+
+<footer>ExamPath · Sample eligibility checker</footer>
+<script src="script.js"></script>
+</body>
+</html>

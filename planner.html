@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Planner | ExamPath</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">Exam<span>Path</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="exam-details.html">Exams</a>
+    <a href="planner.html">Planner</a>
+    <a href="mock-test.html">Mock Tests</a>
+    <a href="eligibility.html">Eligibility</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<main class="page-wrap">
+  <p class="eyebrow">BUILD A ROUTINE</p>
+  <h1>Study Planner</h1>
+  <p class="muted">Add tasks and track your daily preparation.</p>
+
+  <form id="taskForm" class="form-card">
+    <div class="form-grid">
+      <label>
+        Study task
+        <input id="taskTitle" required maxlength="100"
+               placeholder="Example: Practise percentages">
+      </label>
+
+      <label>
+        Study date
+        <input id="taskDate" type="date" required>
+      </label>
+
+      <label>
+        Subject
+        <select id="taskSubject">
+          <option>Quantitative Aptitude</option>
+          <option>Reasoning</option>
+          <option>English</option>
+          <option>General Awareness</option>
+          <option>Computer Knowledge</option>
+          <option>Other</option>
+        </select>
+      </label>
+    </div>
+
+    <button class="btn primary" type="submit">Add Task</button>
+  </form>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <strong id="totalTasks">0</strong>
+      <span>Total Tasks</span>
+    </div>
+    <div class="stat-card">
+      <strong id="completedTasks">0</strong>
+      <span>Completed</span>
+    </div>
+    <div class="stat-card">
+      <strong id="taskProgress">0%</strong>
+      <span>Progress</span>
+    </div>
+  </div>
+
+  <div class="section-heading">
+    <h2>Your Tasks</h2>
+    <button id="clearCompleted" class="btn outline small" type="button">
+      Clear Completed
+    </button>
+  </div>
+
+  <div id="taskList" class="task-list"></div>
+</main>
+
+<footer>Study tasks are saved in this browser.</footer>
+<script src="script.js"></script>
+</body>
+</html>

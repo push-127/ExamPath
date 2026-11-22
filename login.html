@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account | ExamPath</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">Exam<span>Path</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="exam-details.html">Exams</a>
+    <a href="planner.html">Planner</a>
+    <a href="mock-test.html">Mock Tests</a>
+    <a href="eligibility.html">Eligibility</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+</header>
+
+<main class="page-wrap narrow">
+
+  <p class="eyebrow">STUDENT ACCOUNT</p>
+  <h1>Welcome to ExamPath</h1>
+  <p class="muted">Create an account or log in to continue your preparation.</p>
+
+  <section class="form-card">
+    <h2>Create Account</h2>
+
+    <form id="registerForm">
+
+      <label>
+        Full Name
+        <input
+          type="text"
+          id="registerName"
+          required
+          placeholder="Enter your full name"
+          autocomplete="name">
+      </label>
+
+      <label>
+        Email Address
+        <input
+          type="email"
+          id="registerEmail"
+          required
+          placeholder="Enter your email"
+          autocomplete="email">
+      </label>
+
+      <label>
+        Password
+        <input
+          type="password"
+          id="registerPassword"
+          required
+          minlength="8"
+          placeholder="Minimum 8 characters"
+          autocomplete="new-password">
+      </label>
+
+      <button class="btn primary" type="submit">
+        Create Account
+      </button>
+
+      <p id="registerMessage" class="muted" aria-live="polite"></p>
+
+    </form>
+  </section>
+
+  <section class="form-card">
+    <h2>Already Have an Account?</h2>
+
+    <form id="loginForm">
+
+      <label>
+        Email Address
+        <input
+          type="email"
+          id="loginEmail"
+          required
+          placeholder="Enter your email"
+          autocomplete="email">
+      </label>
+
+      <label>
+        Password
+        <input
+          type="password"
+          id="loginPassword"
+          required
+          placeholder="Enter your password"
+          autocomplete="current-password">
+      </label>
+
+      <button class="btn primary" type="submit">
+        Login
+      </button>
+
+      <p id="loginMessage" class="muted" aria-live="polite"></p>
+
+    </form>
+  </section>
+
+</main>
+
+<footer>ExamPath &copy; 2026</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

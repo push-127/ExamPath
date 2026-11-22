@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExamPath | Government Exam Preparation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">Exam<span>Path</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="exam-details.html">Exams</a>
+    <a href="planner.html">Planner</a>
+    <a href="mock-test.html">Mock Tests</a>
+    <a href="eligibility.html">Eligibility</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">YOUR EXAM JOURNEY STARTS HERE</p>
+      <h1>Prepare smarter.<br><span>Achieve more.</span></h1>
+      <p>
+        Explore government exam information, check sample eligibility,
+        plan your study routine and practise mock tests.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="exam-details.html">Explore Exams</a>
+        <a class="btn outline" href="mock-test.html">Take Mock Test</a>
+      </div>
+    </div>
+
+    <div class="hero-panel">
+      <div class="panel-icon">✦</div>
+      <h2>Your preparation, organised.</h2>
+      <p>One place for planning, practice and progress.</p>
+      <div class="mini-stats">
+        <div><strong>4</strong><small>Exam groups</small></div>
+        <div><strong>5</strong><small>Practice questions</small></div>
+        <div><strong>24/7</strong><small>Learn anytime</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">GET STARTED</p>
+        <h2>Everything you need to prepare</h2>
+      </div>
+      <a href="dashboard.html" class="text-link">View Dashboard →</a>
+    </div>
+
+    <div class="feature-grid">
+      <a class="feature-card" href="exam-details.html">
+        <span class="feature-icon">📚</span>
+        <h3>Explore Exams</h3>
+        <p>Browse Banking, SSC, Railway and Defence categories.</p>
+      </a>
+
+      <a class="feature-card" href="eligibility.html">
+        <span class="feature-icon">✓</span>
+        <h3>Eligibility Checker</h3>
+        <p>Compare your details with sample criteria.</p>
+      </a>
+
+      <a class="feature-card" href="planner.html">
+        <span class="feature-icon">🗓</span>
+        <h3>Study Planner</h3>
+        <p>Create tasks and track daily preparation.</p>
+      </a>
+
+      <a class="feature-card" href="mock-test.html">
+        <span class="feature-icon">✎</span>
+        <h3>Mock Tests</h3>
+        <p>Practise questions and review explanations.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="notice">
+      <strong>Important:</strong> Exam details and eligibility criteria are
+      sample information. Always verify recruitment details in the official
+      notification.
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">QUICK SEARCH</p>
+    <h2>Find an exam category</h2>
+
+    <div class="search-row">
+      <input id="examSearch" type="search"
+             placeholder="Search Banking, SSC, Railway...">
+      <button class="btn primary" id="searchButton">Search</button>
+    </div>
+
+    <p id="searchMessage" class="muted"></p>
+    <div id="homeExamResults" class="exam-grid"></div>
+  </section>
+</main>
+
+<footer>
+  © 2026 ExamPath · Government Exam Preparation Learning Project
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
